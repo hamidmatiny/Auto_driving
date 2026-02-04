@@ -1,0 +1,11 @@
+opencv-python==4.8.1.78
+torch==2.0.1
+torchvision==0.15.2
+ultralytics==8.0.236
+open3d==0.17.0
+numpy==1.24.3
+pyyaml==6.0
+scipy==1.11.4
+pillow==10.1.0
+matplotlib==3.8.2
+pyquaternion==0.9.9

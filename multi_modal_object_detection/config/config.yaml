@@ -1,0 +1,99 @@
+# Configuration for Multi-Modal Object Detection System
+
+# Model configuration
+models:
+  camera:
+    model_name: "yolov8n"  # nano, small, medium, large, xlarge
+    model_path: "models/yolov8n.pt"
+    confidence_threshold: 0.5
+    iou_threshold: 0.45
+    device: "cpu"  # cuda or cpu
+    imgsz: 640
+    classes: ["car", "truck", "bus", "motorcycle", "bicycle", "pedestrian"]
+    
+  lidar:
+    voxel_size: 0.05  # meters
+    dbscan_eps: 0.1   # meters
+    dbscan_min_points: 5
+    confidence_threshold: 0.5
+    max_distance: 100  # meters
+    
+  radar:
+    range_threshold: 100.0  # meters
+    min_doppler_velocity: 0.5  # m/s
+    confidence_threshold: 0.4
+    azimuth_resolution: 0.5  # degrees
+
+# Sensor fusion parameters
+fusion:
+  # Matching thresholds
+  max_distance_2d_3d_matching: 50     # pixels
+  max_distance_3d_matching: 0.5       # meters
+  max_velocity_difference: 2.0        # m/s
+  
+  # Confidence weights for fusion
+  confidence_weights:
+    camera: 0.4
+    lidar: 0.4
+    radar: 0.2
+  
+  # NMS (Non-Maximum Suppression) parameters
+  nms_threshold: 0.3
+  multi_modal_nms: True
+  
+  # Output format
+  output_formats: ["json", "xml", "yolo"]
+  save_visualizations: True
+
+# Camera calibration (example for a generic setup)
+camera_calibration:
+  intrinsics:
+    fx: 1000.0  # focal length x
+    fy: 1000.0  # focal length y
+    cx: 320.0   # principal point x
+    cy: 240.0   # principal point y
+  distortion: [0, 0, 0, 0, 0]
+  extrinsics:
+    rotation: [0, 0, 0]
+    translation: [0, 0, 0]
+
+# Coordinate system
+coordinate_system:
+  camera_origin: "camera"  # camera or vehicle
+  lidar_origin: "vehicle"
+  radar_origin: "vehicle"
+  convention: "right-handed"  # right-handed or left-handed
+
+# Visualization
+visualization:
+  show_plots: True
+  save_annotated_images: True
+  save_annotated_pointclouds: True
+  point_cloud_size: 2
+  box_color:
+    high_confidence: [0, 255, 0]     # Green
+    medium_confidence: [255, 255, 0] # Yellow
+    low_confidence: [255, 0, 0]      # Red
+  show_velocity_vectors: True
+  show_confidence_scores: True
+
+# Processing
+processing:
+  batch_processing: False
+  num_workers: 4
+  verbose: True
+  log_detections: True
+
+# Output directories
+output:
+  annotated_images_dir: "output/annotated_images"
+  annotated_pointclouds_dir: "output/annotated_pointclouds"
+  fusion_results_dir: "output/fusion_results"
+  logs_dir: "output/logs"
+
+# Performance tuning
+performance:
+  use_gpu: True
+  fp16: True
+  optimize_model: False
+  benchmark_mode: False
