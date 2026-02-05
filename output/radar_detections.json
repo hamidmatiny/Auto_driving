@@ -1,0 +1,103 @@
+{
+  "sensor": "radar",
+  "num_detections": 5,
+  "moving_objects": 4,
+  "stationary_objects": 1,
+  "detections": [
+    {
+      "class": "motorcycle",
+      "confidence": 0.87,
+      "range": 25.5,
+      "azimuth": -15.0,
+      "doppler_velocity": 12.3,
+      "rcs": -5.0,
+      "snr": 18.5,
+      "position_cartesian": [
+        24.631108570371243,
+        -6.599885650114279,
+        12.75
+      ],
+      "position_polar": [
+        25.5,
+        -15.0
+      ],
+      "object_id": 1
+    },
+    {
+      "class": "motorcycle",
+      "confidence": 0.95,
+      "range": 45.2,
+      "azimuth": 0.0,
+      "doppler_velocity": -8.1,
+      "rcs": 8.5,
+      "snr": 25.3,
+      "position_cartesian": [
+        45.2,
+        0.0,
+        9.040000000000001
+      ],
+      "position_polar": [
+        45.2,
+        0.0
+      ],
+      "object_id": 2
+    },
+    {
+      "class": "stationary_object",
+      "confidence": 0.742,
+      "range": 65.8,
+      "azimuth": 22.5,
+      "doppler_velocity": 0.0,
+      "rcs": -15.0,
+      "snr": 12.1,
+      "position_cartesian": [
+        60.79127323924266,
+        25.180569849622906,
+        65.8
+      ],
+      "position_polar": [
+        65.8,
+        22.5
+      ],
+      "object_id": 3
+    },
+    {
+      "class": "motorcycle",
+      "confidence": 0.94,
+      "range": 35.0,
+      "azimuth": -30.0,
+      "doppler_velocity": 18.5,
+      "rcs": 5.0,
+      "snr": 22.0,
+      "position_cartesian": [
+        30.310889132455355,
+        -17.499999999999996,
+        10.5
+      ],
+      "position_polar": [
+        35.0,
+        -30.0
+      ],
+      "object_id": 4
+    },
+    {
+      "class": "vehicle",
+      "confidence": 0.95,
+      "range": 80.0,
+      "azimuth": 45.0,
+      "doppler_velocity": -25.0,
+      "rcs": 0.0,
+      "snr": 30.5,
+      "position_cartesian": [
+        56.568542494923804,
+        56.5685424949238,
+        160.0
+      ],
+      "position_polar": [
+        80.0,
+        45.0
+      ],
+      "object_id": 5
+    }
+  ]
+}

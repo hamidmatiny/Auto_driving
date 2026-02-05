@@ -1,0 +1,135 @@
+# Virtual Environments
+venv/
+nusc_env/
+env/
+ENV/
+.venv
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Data & Models
+*.pth
+*.pt
+*.onnx
+model_weights/
+pretrained_models/
+yolov8*.pt
+
+# Output & Logs
+output/
+logs/
+*.log
+runs/
+
+# Sample Data (large files)
+*.pcd
+*.pcd.gz
+sample_data/*.jpg
+sample_data/*.png
+sample_data/*.bin
+sample_data/raw/
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE specific
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.backup
+*.bak
+~*
+\#*#
+
+# System files
+.directory
+.goutputrc
+
+# GPU profiling
+profile_*.json
+.ncu-result.ncu-rep
+
+# Package managers
+pip-log.txt
+pip-delete-this-directory.txt
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Large files
+*.tar.gz
+*.zip
+*.rar
+
+# ROS/CARLA specific
+*.bag
+*.rosbag
+*.sqlite

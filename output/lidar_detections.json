@@ -1,0 +1,6 @@
+{
+  "sensor": "lidar",
+  "num_detections": 0,
+  "voxel_size": 0.05,
+  "detections": []
+}
