@@ -69,6 +69,7 @@ coverage.xml
 model_weights/
 pretrained_models/
 yolov8*.pt
+models/
 
 # Output & Logs
 output/
