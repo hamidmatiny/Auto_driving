@@ -162,7 +162,7 @@ multi_modal_object_detection/
 
 ### Quick Start (1 minute)
 ```bash
-cd /Users/hamidrezamatiny/Documents/GitHub/Auto_driving/multi_modal_object_detection
+cd ..
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -475,7 +475,7 @@ You now have a **complete, production-ready multi-modal object detection system*
 ## 📍 Location
 
 ```
-/Users/hamidrezamatiny/Documents/GitHub/Auto_driving/multi_modal_object_detection/
+../
 ```
 
 All files are organized and ready to use!
@@ -485,7 +485,7 @@ All files are organized and ready to use!
 ## 🚀 Start Now
 
 ```bash
-cd /Users/hamidrezamatiny/Documents/GitHub/Auto_driving/multi_modal_object_detection
+cd ..
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt

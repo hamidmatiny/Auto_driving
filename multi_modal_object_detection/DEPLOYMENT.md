@@ -57,7 +57,7 @@ python3 --version  # Should be 3.8+
 brew install python3 cmake
 
 # 3. Navigate to project
-cd /Users/hamidrezamatiny/Documents/GitHub/Auto_driving/multi_modal_object_detection
+cd ..
 
 # 4. Create virtual environment
 python3 -m venv venv

@@ -10,7 +10,7 @@ from .radar_detector import RadarDetector
 from .fusion_engine import FusionEngine
 
 __version__ = "1.0.0"
-__author__ = "Autonomous Driving Team"
+__author__ = "Hamid Matiny"
 
 __all__ = [
     "BaseDetector",

@@ -59,7 +59,7 @@ multi_modal_object_detection/
 
 1. Clone the repository:
 ```bash
-cd /Users/hamidrezamatiny/Documents/GitHub/Auto_driving/multi_modal_object_detection
+cd ..
 ```
 
 2. Create a virtual environment:

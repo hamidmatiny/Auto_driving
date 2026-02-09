@@ -11,7 +11,7 @@
 ### Step 1: Clone the Repository
 
 ```bash
-cd /Users/hamidrezamatiny/Documents/GitHub/Auto_driving
+cd ..
 cd multi_modal_object_detection
 ```
 

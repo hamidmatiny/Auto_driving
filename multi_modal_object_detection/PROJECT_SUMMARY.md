@@ -23,7 +23,7 @@
 
 ```bash
 # Navigate to project
-cd /Users/hamidrezamatiny/Documents/GitHub/Auto_driving/multi_modal_object_detection
+cd ..
 
 # Create virtual environment
 python3 -m venv venv

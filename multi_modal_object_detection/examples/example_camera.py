@@ -44,7 +44,7 @@ def main():
     
     # Create sample image
     print("Creating sample image...")
-    image_path = create_sample_image()
+    image_path = "examples/sample_data/sample_image.jpg"
     print(f"✓ Sample image created at: {image_path}\n")
     
     # Initialize detector

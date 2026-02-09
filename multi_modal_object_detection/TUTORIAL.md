@@ -14,7 +14,7 @@ python3 --version
 #### Step 2: Create Virtual Environment
 
 ```bash
-cd /Users/hamidrezamatiny/Documents/GitHub/Auto_driving/multi_modal_object_detection
+cd ..
 
 # Create virtual environment
 python3 -m venv venv
