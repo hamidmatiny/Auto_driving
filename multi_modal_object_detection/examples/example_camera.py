@@ -30,7 +30,7 @@ def create_sample_image():
         for y in range(50, 200):
             pixels[x, y] = (200, 200, 200)
     
-    sample_path = "examples/sample_data/sample_camera_image.jpg"
+    sample_path = "examples/sample_data/sample_image.jpg"
     os.makedirs(os.path.dirname(sample_path), exist_ok=True)
     img.save(sample_path)
     return sample_path
@@ -44,7 +44,7 @@ def main():
     
     # Create sample image
     print("Creating sample image...")
-    image_path = "examples/sample_data/sample_image.jpg"
+    image_path = create_sample_image()
     print(f"✓ Sample image created at: {image_path}\n")
     
     # Initialize detector
